@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anilkar José Mestre Morón — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2a30; --muted:#5b6b72; --line:#d9e3e6; --bg:#f4f7f8; --card:#ffffff;
+    --teal:#2b7f8e; --teal-soft:#e3f0f2; --teal-deep:#1f5f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  .wrap{max-width:920px;margin:0 auto;padding:40px 20px 64px}
+  header.hero{background:var(--teal-deep);color:#fff;border-radius:18px;padding:44px 40px 36px;position:relative;overflow:hidden}
+  header.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border:38px solid rgba(255,255,255,.08);border-radius:28px;transform:rotate(18deg)}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-weight:600}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:clamp(32px,5vw,46px);line-height:1.1;margin:10px 0 8px}
+  .role{font-size:18px;opacity:.92}
+  .contact{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15px}
+  .contact span{display:inline-flex;align-items:center;gap:8px}
+  .contact a{color:#fff}
+  .contact svg{width:16px;height:16px;opacity:.85}
+  nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 6px}
+  nav a{font-size:14px;font-weight:500;color:var(--teal-deep);text-decoration:none;background:var(--card);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+  nav a:hover{border-color:var(--teal);background:var(--teal-soft)}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px 32px;margin-top:18px}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:650;font-size:22px;color:var(--teal-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+  h2::before{content:"";width:22px;height:4px;background:var(--teal);border-radius:2px}
+  p{max-width:68ch}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .job{padding:16px 0;border-top:1px solid var(--line)}
+  .job:first-of-type{border-top:0;padding-top:0}
+  .job-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .job h3{font-size:17px;font-weight:600}
+  .org{color:var(--muted);font-size:15px}
+  .dur{font-size:13px;font-weight:600;color:var(--teal-deep);background:var(--teal-soft);padding:3px 10px;border-radius:999px;white-space:nowrap}
+  ul.pts{margin:8px 0 0 18px;color:#33454c}
+  ul.pts li{margin:3px 0}
+  .group-label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:22px 0 10px}
+  .group-label:first-of-type{margin-top:0}
+  .edu{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:12px 0;border-top:1px solid var(--line)}
+  .edu:first-of-type{border-top:0;padding-top:0}
+  .edu b{font-weight:600}
+  .edu .where{color:var(--muted);font-size:15px;grid-column:1}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{background:var(--teal-soft);color:var(--teal-deep);font-size:14px;font-weight:500;padding:6px 12px;border-radius:8px}
+  .award{border-left:4px solid var(--teal);padding:4px 0 4px 16px;margin-bottom:14px}
+  .award b{display:block}
+  .why{background:var(--teal-soft);border-color:#c5dfe3}
+  .why h2{color:var(--teal-deep)}
+  .why ol{margin:12px 0 0 20px}
+  .why li{margin:6px 0;max-width:68ch}
+  table.cmp{width:100%;border-collapse:collapse;margin-top:18px;font-size:15px;background:#fff;border-radius:10px;overflow:hidden}
+  table.cmp th,table.cmp td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  table.cmp th{background:var(--teal-deep);color:#fff;font-weight:600}
+  table.cmp tr:last-child td{border-bottom:0}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  @media (max-width:680px){
+    header.hero{padding:32px 24px}
+    section{padding:24px 20px}
+    .grid2{grid-template-columns:1fr}
+    table.cmp{font-size:14px}
+  }
+  @media print{
+    body{background:#fff}
+    nav,footer{display:none}
+    section,header.hero{border-radius:0;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Resume</div>
+    <h1>Anilkar José Mestre Morón</h1>
+    <div class="role">Professional Technician in Accounting and Finance</div>
+    <div class="contact">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Valledupar, Cesar, Colombia</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:josemestremoron@gmail.com">josemestremoron@gmail.com</a></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Available immediately</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <section id="profile">
+    <h2>Professional Profile</h2>
+    <p>Responsible and dedicated accounting and finance technician with more than five years of experience as an accounting assistant, plus experience in heavy-equipment operation and community education programs. I am goal-oriented, I work well with people at every level of an organization, and I adapt quickly to new workplaces and challenges. I am looking for a position where I can apply my accounting knowledge and leadership skills while I complete my degree in Public Accounting.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+
+    <div class="group-label">Accounting &amp; Finance</div>
+    <div class="job">
+      <div class="job-head"><h3>Accounting Assistant</h3><span class="dur">4 years, 11 months</span></div>
+      <div class="org">Pureza y Más — Valledupar, Cesar</div>
+      <ul class="pts">
+        <li>Supported the daily accounting process of the company.</li>
+        <li>Recorded and organized accounting documents and transactions.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><h3>Accounting Assistant</h3><span class="dur">6 months</span></div>
+      <div class="org">Batallón de Artillería La Popa (Colombian Army) — Valledupar, Cesar</div>
+      <ul class="pts">
+        <li>Assisted the accounting office of a military unit.</li>
+        <li>Received an honorable mention for excellent conduct and collaboration with military staff.</li>
+      </ul>
+    </div>
+
+    <div class="group-label">Mining Operations</div>
+    <div class="job">
+      <div class="job-head"><h3>Truck Operator</h3><span class="dur">2 years, 2 months</span></div>
+      <div class="org">Consorcio Minero del Cesar — La Loma, Cesar</div>
+      <ul class="pts"><li>Operated mining haul trucks following safety procedures in an open-pit mine.</li></ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><h3>Training Assistant</h3><span class="dur">4 months</span></div>
+      <div class="org">Corporación Técnica del Cesar (CORTEC) — Becerril, Cesar</div>
+      <ul class="pts"><li>Supported the training of heavy-machinery operator students.</li></ul>
+    </div>
+
+    <div class="group-label">Education &amp; Community</div>
+    <div class="job">
+      <div class="job-head"><h3>Coordinator of Educational Agents</h3><span class="dur">11 months</span></div>
+      <div class="org">Fundación Esperanza es Vida — Valledupar, Cesar</div>
+      <ul class="pts"><li>Coordinated a team of educational agents in community programs.</li></ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu"><b>Public Accounting (6 semesters completed)</b><span></span><span class="where">Universidad Popular del Cesar — Valledupar</span></div>
+    <div class="edu"><b>Professional Technician in Accounting and Finance</b><span></span><span class="where">Servicio Nacional de Aprendizaje (SENA) — Valledupar</span></div>
+    <div class="edu"><b>Technician in Mining Truck Operation</b><span></span><span class="where">Corporación Técnica del Cesar (CORTEC) — Valledupar</span></div>
+    <div class="edu"><b>Agricultural High School Diploma</b><span></span><span class="where">Instituto Agrícola — Pueblo Bello, Cesar</span></div>
+  </section>
+
+  <div class="grid2">
+    <section id="awards" style="margin-top:18px">
+      <h2>Awards</h2>
+      <div class="award"><b>Honorable Mention — SENA</b>For excellent representation of SENA, excellent conduct, and respect and collaboration with the staff of the military forces.</div>
+      <div class="award"><b>Honorable Mention — Heavy Machinery Program</b>For excellent theoretical and practical performance, including training on a 773B mining truck and a 785C truck simulator.</div>
+    </section>
+    <section id="skills" style="margin-top:18px">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span>Accounting support</span><span>Document management</span><span>Teamwork</span><span>Leadership</span><span>Interpersonal relations</span><span>Decision making</span><span>Heavy-equipment operation</span><span>Workplace safety</span>
+      </div>
+      <div class="group-label" style="margin-top:22px">Languages</div>
+      <p>Spanish — native<br>English — currently studying</p>
+      <div class="group-label" style="margin-top:22px">References</div>
+      <p>Available upon request.</p>
+    </section>
+  </div>
+
+  <footer>Anilkar José Mestre Morón · Valledupar, Colombia</footer>
+</div>
+</body>
+</html>
